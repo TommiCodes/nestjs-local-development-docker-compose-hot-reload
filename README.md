@@ -7,6 +7,10 @@ Dockerize the NestJS starter App.
 - NestJS
 - Docker
 
+# Youtube Video Link
+https://www.youtube.com/watch?v=BrlQthcUHGw
+(published on 29 October 2020)
+
 # Start Commands for Docker
 Build your image:  
 `docker build <your path> -t <<user>/project-name>`  
