@@ -1,5 +1,11 @@
-# Content
-Dockerize the NestJS starter App.
+# Content Video 1
+Dockerize the NestJS starter App.  
+https://www.youtube.com/watch?v=BrlQthcUHGw
+
+# Content Video 2
+- Add a docker-compose file and run also a postgres db
+- Connect with NestJS to the db
+- Post Data && Get Data over http (to NestJS) and then save it in the db
 
 # You need
 - NPM
@@ -7,9 +13,6 @@ Dockerize the NestJS starter App.
 - NestJS
 - Docker
 
-# Youtube Video Link
-https://www.youtube.com/watch?v=BrlQthcUHGw
-(published on 29 October 2020)
 
 # Start Commands for Docker
 Build your image:  
