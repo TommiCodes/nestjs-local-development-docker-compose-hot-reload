@@ -5,7 +5,10 @@ https://www.youtube.com/watch?v=BrlQthcUHGw
 # Content Video 2
 - Add a docker-compose file and run also a postgres db
 - Connect with NestJS to the db
-- Post Data && Get Data over http (to NestJS) and then save it in the db
+- Post Data && Get Data over http (to NestJS) and then save it in the db  
+
+https://www.youtube.com/watch?v=jYFyLLqvHy8  
+(published on 05th of November 2020)
 
 # You need
 - NPM
