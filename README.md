@@ -13,6 +13,9 @@ https://www.youtube.com/watch?v=BrlQthcUHGw
 - NestJS
 - Docker
 
+# Start Commands for docker-compose file
+Builds, (re)creates, starts, and attaches to containers for a service.  
+`docker-compose up`
 
 # Start Commands for Docker
 Build your image:  
