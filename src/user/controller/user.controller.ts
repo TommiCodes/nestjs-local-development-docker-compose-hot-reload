@@ -1,6 +1,8 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, HttpCode, Post } from '@nestjs/common';
 import { Observable } from 'rxjs';
 import { runInThisContext } from 'vm';
+import { CreateUserDto } from '../models/dto/CreateUser.dto';
+import { LoginUserDto } from '../models/dto/LoginUser.dto';
 import { UserI } from '../models/user.interface';
 import { UserService } from '../service/user.service';
 
@@ -10,8 +12,14 @@ export class UserController {
     constructor(private userService: UserService) {}
 
     @Post()
-    add(@Body() user: UserI): Observable<UserI> {
-        return this.userService.add(user);
+    create(@Body() createdUserDto: CreateUserDto): Observable<UserI> {
+        return this.userService.create(createdUserDto);
+    }
+
+    @Post('login')
+    @HttpCode(200)
+    login(@Body() loginUserDto: LoginUserDto): Observable<string> {
+        return this.userService.login(loginUserDto);
     }
 
     @Get()
