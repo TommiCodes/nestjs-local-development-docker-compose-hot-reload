@@ -10,6 +10,7 @@ services:
         environment: 
             DATABASE_URL: postgres://user:password@postgres:5432/db
             NODE_ENV: development
+            JWT_SECRET: 1hard_to_guess_secret7890a
             PORT: 3000
         ports:
             - "8080:3000"
