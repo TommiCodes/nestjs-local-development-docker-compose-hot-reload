@@ -4,6 +4,8 @@ The Youtube Playlist for this repository can be found here: https://www.youtube.
 
 This Repository is a clone of the Project "nestjs-dockerized" (see more under Concept of the series).
 
+In the folder 'postman-collection' you find a collection of postman requests that you can import into postman and execute against the api.
+
 ## Start Commands for docker-compose file and information
 Builds, (re)creates, starts, and attaches to containers for a service.  
 `docker-compose up`  
