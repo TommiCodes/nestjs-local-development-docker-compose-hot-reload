@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "1ec55610-3493-4caa-8124-a7927055cd1f",
+		"name": "NestJS-Auth-Jwt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register a user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"thomas\",\r\n    \"email\": \"thomas@test.de\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				},
+				"description": "Email needed\r\npassword needed"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users (PROTECTED WITH AUTH)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJuYW1lIjoidGhvbWFzIiwiZW1haWwiOiJ0aG9tYXNAbWFpbC5kZSJ9LCJpYXQiOjE2MTA0ODE4MDAsImV4cCI6MTYxMDQ5MTgwMH0.pQPHajn-x_KI5zGCIvNrKMvCo14HNrQ4zIgFjB6h9jQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				},
+				"description": "To make this request you need a valid jwt. \r\nYou can get this with the login request"
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"thomas@mail.de\",\r\n    \"password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				},
+				"description": "Returns a JWT\r\n\r\nemail needed\r\npassword needed"
+			},
+			"response": []
+		}
+	]
+}
