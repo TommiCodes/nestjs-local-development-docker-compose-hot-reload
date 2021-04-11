@@ -29,6 +29,12 @@ Clone/Fork of: 1. NestJS Dockerized
 Repo-Link: https://github.com/ThomasOliver545/nestjs-auth-jwt  
 Youtube-Playlist: https://www.youtube.com/playlist?list=PLVfq1luIZbSmjsLsM04De_eltKTX0lz7f  
 
+03. NestJS Local Development with Docker-Compose (Hot Reload and Debugging)
+Clone/Fork of: 02. NestJS Auth Jwt
+Repo-Link:
+Youtube-Video:
+
+
 # You need the installed tools
 - NPM
 - Node.js
