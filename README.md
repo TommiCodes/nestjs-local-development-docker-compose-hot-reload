@@ -31,8 +31,8 @@ Youtube-Playlist: https://www.youtube.com/playlist?list=PLVfq1luIZbSmjsLsM04De_e
 
 03. NestJS Local Development with Docker-Compose (Hot Reload and Debugging)
 Clone/Fork of: 02. NestJS Auth Jwt
-Repo-Link:
-Youtube-Video:
+Repo-Link: https://github.com/ThomasOliver545/nestjs-local-development-docker-compose-hot-reload
+Youtube-Video: https://www.youtube.com/watch?v=CLqlCkvAKKQ
 
 
 # You need the installed tools
