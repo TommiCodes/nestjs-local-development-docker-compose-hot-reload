@@ -1,8 +1,8 @@
 # General Information
-This Repository is about implementing Jwt Authorization with NestJs.  
-The Youtube Playlist for this repository can be found here: https://www.youtube.com/playlist?list=PLVfq1luIZbSmjsLsM04De_eltKTX0lz7f  
+This Repository is about NestJS Local Development with Docker (Hot Reloading and Debugging with Docker-compose).  
+The Youtube Video for this repository can be found here:
 
-This Repository is a clone of the Project "nestjs-dockerized" (see more under Concept of the series).
+This Repository is a clone of the Project "NestJS Auth Jwt  " (see more under Concept of the series).
 
 In the folder 'postman-collection' you find a collection of postman requests that you can import into postman and execute against the api.
 
